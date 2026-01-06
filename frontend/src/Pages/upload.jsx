@@ -14,6 +14,7 @@ const Upload = () =>{
                <h1 className="font-bold text-5xl">ChatPDF</h1>
                <input
                 type="file"
+                accept=".pdf, .docx"
                 ref={inputRef}
                 className="hidden"
                />
@@ -24,7 +25,7 @@ const Upload = () =>{
                   <MdUploadFile /> <p> Upload your PDF Document</p>
                </div>
             </div>
-        </div>
+       </div>
       )
 }
 
