@@ -1,10 +1,15 @@
-import React from "react"
+import React, { useRef } from "react"
+import { MdUploadFile } from "react-icons/md"
+import Upload from "./Pages/upload"
+import Chatbot from "./Pages/chatbot"
 
 const App= () =>{
 
-  return (
-    <div className='bg-white min-h-screen w-full flex items-center justify-center'>
-    </div>
+  return(
+     <>
+      <Upload />
+      <Chatbot />
+     </>
   )
 }
 
