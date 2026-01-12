@@ -4,7 +4,7 @@ import { FaFilePdf } from "react-icons/fa"
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 
-const Upload = () =>{
+const Upload = ({ setDocName }) =>{
    
    const [Doc, setDoc] = useState(null)
 
@@ -14,11 +14,13 @@ const Upload = () =>{
          const file = event.target.files[0];
          if(file){
             setDoc(file)
+            setDocName(file.name)
          }
       }
 
       const handleDocDelete = () =>{
          setDoc("");
+         setDocName("")
 
       if(inputRef.current){
         inputRef.current.value= null

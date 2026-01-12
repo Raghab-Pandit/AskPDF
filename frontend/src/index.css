@@ -1,6 +1,9 @@
 @import "tailwindcss";
 :root {
   font-family: cursive;
+  transition: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
   /*
   background-color: rgb(66, 176, 219);
   */
