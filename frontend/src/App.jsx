@@ -1,14 +1,14 @@
-import React, { useRef } from "react"
-import { MdUploadFile } from "react-icons/md"
 import Upload from "./Pages/upload"
 import Chatbot from "./Pages/chatbot"
+import { useState } from "react"
 
 const App= () =>{
+  const [docName, setDocName] = useState("")
 
   return(
      <div className="flex flex-col md:flex-row">
-      <Upload />
-      <Chatbot />
+      <Upload setDocName={setDocName} />
+      <Chatbot docName={docName} />
      </div>
   )
 }
